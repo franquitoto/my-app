@@ -11,12 +11,10 @@ class App extends React.Component{
     return(
       <>
         <NavBar/>
-        
-          <ItemListContainer producto="Desayunador"></ItemListContainer>
+          <ItemListContainer producto="Desayunadorr"></ItemListContainer>
           <ItemListContainer producto="Casita de muñecas"></ItemListContainer>
           <ItemListContainer producto="Cocinita"></ItemListContainer>
           <ItemListContainer producto="Mesita"></ItemListContainer>
-        
       </>
     )
   }
