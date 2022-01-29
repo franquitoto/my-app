@@ -5,6 +5,7 @@ import './App.css';
 
 import NavBar from './Components/NavBar/NavBar';
 import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
+import ItemCount from './Components/ItemCount/ItemCount';
 
 class App extends React.Component{
   render(){
@@ -15,6 +16,13 @@ class App extends React.Component{
           <ItemListContainer producto="Casita de muñecas"></ItemListContainer>
           <ItemListContainer producto="Cocinita"></ItemListContainer>
           <ItemListContainer producto="Mesita"></ItemListContainer>
+          <br></br>
+          <ItemCount
+            stock={10}
+            initial= {1}
+          />
+          
+          
       </>
     )
   }
