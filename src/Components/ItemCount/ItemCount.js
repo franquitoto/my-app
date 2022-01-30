@@ -25,7 +25,7 @@ function ItemCount(props) {
     }
     const refreshCounter = () => {
         setCounter(0)
-        alert("usted a agregado "+ counter + " productos al carrito")
+        alert("usted a agregado "+ counter + " productos al carrito facheroo")
     }
     return (
         <>
