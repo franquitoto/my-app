@@ -9,6 +9,7 @@ import ItemListContainer from './Components/ItemListContainer/ItemListContainer'
 import ItemCount from './Components/ItemCount/ItemCount';
 import Item from './Components/Item/Item';
 import ItemList from './Components/ItemList/ItemList';
+import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer';
 
 class App extends React.Component{
   render(){
@@ -24,12 +25,7 @@ class App extends React.Component{
             stock={10}
             initial= {1}
           />
-          <ItemList></ItemList>
-        
-        
-          
-          
-          
+          <ItemDetailContainer></ItemDetailContainer> 
       </>
     )
   }

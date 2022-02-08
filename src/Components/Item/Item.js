@@ -10,7 +10,7 @@ const Item = ({data}) => {
                         <CardTitle>Nombre: {data.name}</CardTitle>
                         <CardSubtitle>Email: {data.email}</CardSubtitle>
                         <CardText>Nombre de usuario: {data.username}</CardText>
-                        <Button>Contactar</Button>
+                        
                     </CardBody>
                 </Card>
             </div>
