@@ -5,7 +5,7 @@ const ItemList = () => {
     const [user, setUser] = useState([]);
 
     useEffect(() =>{
-        fetch('https://jsonplaceholder.typicode.com/users')
+        fetch('https://api.github.com/users')
         .then((response) => response.json())
         .then((json) => setUser(json));
     },[]);

@@ -8,12 +8,12 @@ ul{
     text-align:left;
     display: inline-block;
 }
-ul li{
+.Link{
     display: inline-block;
     padding: 5px;
     margin: 5px; 
 }
-ul li a{
+.Link{
     text-decoration: none;
     color: black;
 }
