@@ -20,6 +20,7 @@ import Home from './views/Home/Home';
 import Productos from './views/Productos/Productos';
 import Servicios from './views/Servicios/Servicios';
 import Preguntas from './views/Preguntas/Preguntas';
+import UserDetail from './views/UserDetail/UserDetail';
 
 const App = () => {
   return (
@@ -30,7 +31,7 @@ const App = () => {
         <Route path="/Productos" element={<Productos />} />
         <Route path="/Servicios" element={<Servicios />} />
         <Route path="/Preguntas" element={<Preguntas />} />
-
+        <Route path='/detail/:login' element={<UserDetail />} />
       </Routes>
     </Router>
   );
