@@ -1,9 +1,12 @@
 import React from 'react';
-import ItemList from '../../Components/ItemList/ItemList';
+import ItemCount from '../../Components/ItemCount/ItemCount';
 const Home = () => {
   return (
     <>
-      <ItemList style={{margin:10}}></ItemList>
+      <ItemCount
+      initial= {1}
+      stock= {10}
+      />
     </>
   );
 };
