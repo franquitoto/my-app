@@ -15,6 +15,8 @@ import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailCont
 // Import react router dom
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
+import { CartProvider } from './CartContext';
+
 // Importar views
 import Home from './views/Home/Home';
 import Productos from './views/Productos/Productos';
@@ -24,16 +26,18 @@ import UserDetail from './views/UserDetail/UserDetail';
 
 const App = () => {
   return (
-    <Router>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Productos" element={<Productos />} />
-        <Route path="/Servicios" element={<Servicios />} />
-        <Route path="/Preguntas" element={<Preguntas />} />
-        <Route path='/detail/:login' element={<UserDetail />} />
-      </Routes>
-    </Router>
+    <CartProvider>
+      <Router>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Productos" element={<Productos />} />
+          <Route path="/Servicios" element={<Servicios />} />
+          <Route path="/Preguntas" element={<Preguntas />} />
+          <Route path='/detail/:login' element={<UserDetail />} />
+        </Routes>
+      </Router>
+    </CartProvider>
   );
 }
 

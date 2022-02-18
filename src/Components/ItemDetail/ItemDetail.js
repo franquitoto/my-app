@@ -5,14 +5,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function ItemDetail({ data }) {
     return (
         <>
-            <div className='row' style={{margin:50}}>
-                <Card className='col-lg-3'>
-                    <CardBody>
-                        <CardImg top width="100%" src={data.avatar_url} alt="Card image cap" />
-                        <CardTitle className='text-center'>User: <b>{data.login}</b></CardTitle>
-                        <CardSubtitle className='text-center'>Location {data.location}</CardSubtitle>
-                        <CardSubtitle className='text-center'>Seguidores {data.followers}</CardSubtitle>
-                        <Button >Contactar</Button>
+            <div className='col-lg-3 pb-3'>
+                <Card >
+                    <CardBody >
+                        <CardTitle className='text-center'>Producto: <b>{data.name}</b></CardTitle>
+                        <CardSubtitle className='text-center'>Precio:$ {data.price}</CardSubtitle>
+                        <CardSubtitle className='text-center'>Stock: {data.stock}</CardSubtitle>
+                        <Button className='col-lg-12'>Comprar</Button>
                     </CardBody>
                 </Card>
             </div>
